@@ -3,8 +3,8 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse("Página principal")
+    return render(request, 'core/home.html')
 def carreras(request):
-    return HttpResponse("Carreras")
+    return render(request, 'core/carreras.html')
 def docentes(request):
-    return HttpResponse("Docentes") 
+    return render(request, 'core/docentes.html')
